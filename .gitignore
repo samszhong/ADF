@@ -1,0 +1,38 @@
+# ---- General OS / Editor ----
+.DS_Store
+Thumbs.db
+
+# ---- IDE / Workspace ----
+.vscode/
+*.code-workspace
+.idea/
+
+# ---- Node / Front-end (if ever used) ----
+node_modules/
+dist/
+build/
+
+# ---- Python (if used for helper scripts) ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+
+# ---- Logs / Temp ----
+*.log
+logs/
+temp/
+tmp/
+
+# ---- Notebooks runtime (if applicable) ----
+.ipynb_checkpoints/
+
+# ---- Data / Large artifacts (avoid committing raw data) ----
+*.bak
+*.tmp
+
+# IMPORTANT: Do NOT ignore the adf_publish branch contents.
+# ADF will create ARM template artifacts there after Publish.
