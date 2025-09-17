@@ -1,0 +1,35 @@
+{
+	"name": "exec_ssis_package",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute SSIS package1",
+				"type": "ExecuteSSISPackage",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"packageLocation": {
+						"packagePath": "folder1/Integration Services Project1/Package.dtsx",
+						"type": "SSISDB"
+					},
+					"environmentPath": null,
+					"connectVia": {
+						"referenceName": "Azure-SSIS-integration-runtime",
+						"type": "IntegrationRuntimeReference"
+					},
+					"loggingLevel": "Basic"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2025-05-13T20:15:34Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

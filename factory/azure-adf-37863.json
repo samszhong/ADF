@@ -1,0 +1,9 @@
+{
+	"name": "azure-adf-37863",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "339fe63f-12f2-4d4d-87aa-ae909c8ada93",
+		"tenantId": "54a2fb86-3718-4e98-b2b3-d24e9b9414c0"
+	}
+}
